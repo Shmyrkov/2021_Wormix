@@ -34,6 +34,7 @@ for i in r:
     x = (float(i) * span / points - 0.5 * span)*400
     y = pnoise1(x + base, octaves)*100+400
     pygame.draw.line(screen, WHITE, [a, b], [x, y], 3)
+    pygame.draw.rect(screen, WHITE, (x, y, 5, 600))
     a = x
     b = y
 
